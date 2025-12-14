@@ -1,10 +1,12 @@
 import React from 'react'
-
-
+import { useNavigate } from 'react-router-dom';
 
 
 const Hero = () => {
+  const navigate = useNavigate();
   const imageUrl = ['/u1.jpg', '/u2.jpg', '/u4.jpg', '/u5.jpg'];
+
+  
   return (
     <div className='px-4 sm:px-20 xl:px-32 relative inline-flex flex-col w-full justify-center bg-[url(/gradient_bg.png)] bg-cover bg-no-repeat min-h-screen'>
       <div className='text-center mb-6'>

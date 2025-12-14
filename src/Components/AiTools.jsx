@@ -14,23 +14,26 @@ const AiTools = () => {
           Everything you need to create, enhance, and optimize your content with AI.
         </p>
 
-        <div className="mt-16 flex flex-wrap justify-center gap-8 px-4">
-          {AiToolsData.map(({ id, title, description, Icon, bg, path }) => {
-            const LucideIcon = Icons[Icon] ?? Icons.HelpCircle;
+        <div className="flex flex-wrap mt-10 justify-center ">
+          {AiToolsData.map((tool) => {
+            const { id, title, description, Icon: iconName, bg, path } = tool;
+            const LucideIcon = Icons[iconName] || Icons.HelpCircle;
 
             return (
-              <button
-                key={id}
-                type="button"
-                className="p-6 text-left  rounded-lg shadow-lg  max-w-[25%]  transition-transform focus:outline-none "
+              <div
+                key={id ?? title}
+                className="p-8 m-4 max-w-xs rounded-lg bg-[#FDFDFE] shadow-lg border border-gray-100 hover:translate-y-1 transition-all duration-300 cursor-pointer"
                 onClick={() => path && navigate(path)}
               >
-                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-white/15 p-3">
-                  <LucideIcon size={30} color="blue" />
+                <div
+                  className="w-12 h-12 p-3 text-white rounded-xl inline-flex items-center justify-center"
+                  style={{ background: `linear-gradient(to bottom, ${bg.from}, ${bg.to})` }}
+                >
+                  <LucideIcon className="w-6 h-6" />
                 </div>
-                <h2 className="text-xl font-semibold font-sans mb-2 text-gray-600">{title}</h2>
-                <p className="mt-10 font-light leading-relaxed text-medium">{description}</p>
-              </button>
+                <h3 className="mt-6 mb-3 text-lg font-semibold">{title}</h3>
+                <p className="text-gray-400 text-sm max-w-[95%]">{description}</p>
+              </div>
             );
           })}
         </div>

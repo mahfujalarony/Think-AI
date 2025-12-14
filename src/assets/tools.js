@@ -5,7 +5,7 @@ export const AiToolsData = [
         description: 'Generate high-quality, engaging articles on any topic with our AI writing technology.',
         Icon: 'SquarePen',
         bg: { from: '#3588F2', to: '#0BB0D7' },
-        path: '/tools/article-writer'
+        path: '/ai/write-article'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const AiToolsData = [
         description: 'Find the perfect, catchy title for your blog posts with our AI-powered generator.',
         Icon: 'Hash', 
         bg: { from: '#E91E63', to: '#9C27B0' },
-        path: '/tools/blog-title'
+        path: '/ai/blog-titles'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const AiToolsData = [
         description: 'Create stunning visuals with our AI image generation tool. Experience the power of AI.',
         Icon: 'Image', 
         bg: { from: '#4CAF50', to: '#8BC34A' },
-        path: '/tools/image-generator'
+        path: '/ai/genarate-images'
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ export const AiToolsData = [
         description: 'Effortlessly remove backgrounds from your images with our AI-driven tool.',
         Icon: 'Background',
         bg: { from: '#FF4500', to: '#FF6347' },
-        path: '/tools/background-remover'
+        path: '/ai/remove-background'
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ export const AiToolsData = [
         description: 'Remove unwanted objects from your images seamlessly with our AI object removal tool.',
         Icon: 'Scissors',
         bg: { from: '#1E90FF', to: '#00BFFF' },
-        path: '/tools/object-removal'
+        path: '/ai/remove-object'
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ export const AiToolsData = [
         description: 'Get your resume reviewed by AI to improve your chances of landing your dream job.',
         Icon: 'FileText',
         bg: { from: '#009688', to: '#4DB6AC' },
-        path: '/tools/resume-reviewer'
+        path: '/ai/resume-reviewer'
     }
 
 ];
